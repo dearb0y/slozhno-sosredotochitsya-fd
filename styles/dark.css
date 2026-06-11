@@ -19,11 +19,11 @@
   --headings-color: var(--color-dark-blue);
   /* END: Переменные заголовков */
 
-  /* BEGIN: Переменные h1 */
+  /* BEGIN: Переменные h1 (xxl */
   --h1-color: var(--color-dark-fuchsia);
-  /* END: Переменные h1 */
+  /* END: Переменные h1 (xxl) */
 
-  /* BEGIN: Переменные h2 */
+  /* BEGIN: Переменные h2 (xl) */
   --h2-color: var(--color-primary);
-  /* END: Переменные h2 */
+  /* END: Переменные h2 (xl) */
 }

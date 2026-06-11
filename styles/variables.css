@@ -70,23 +70,23 @@
   --headings-color: var(--color-base);
   /* END: Переменные заголовков */
 
-  /* BEGIN: Переменные h1 */
+  /* BEGIN: Переменные h1 (xxl) */
   --h1-font-size: 11.6rem;
   --h1-line-height: var(--line-height-xs);
   --h1-color: var(--color-light-pink);
   --h1-text-shadow: var(--color-accent);
-  /* END: Переменные h1 */
+  /* END: Переменные h1 (xxl) */
 
-  /* BEGIN: Переменные h2 */
+  /* BEGIN: Переменные h2 (xl) */
   --h2-color: var(--headings-color);
-  /* END: Переменные h2 */
+  /* END: Переменные h2 (xl) */
 
-  /* BEGIN: Переменные h3 */
+  /* BEGIN: Переменные h3 (lg) */
   --h3-color: var(--headings-color);
-  /* END: Переменные h3 */
+  /* END: Переменные h3 (lg) */
 
-  /* BEGIN: Переменные h4 */
+  /* BEGIN: Переменные h4 (md) */
   --h4-color: var(--headings-color);
   --h4-font-weight: var(--font-weight-base);
-  /* END: Переменные h4 */
+  /* END: Переменные h4 (md) */
 }

@@ -22,4 +22,9 @@
   inline-size: 100%;
   max-inline-size: var(--breakpoint-xl);
 }
+
+.has-bg {
+  display: block;
+  background-color: var(--color-primary);
+}
 /* END: Дополнительные общие и вспомогательные стили */
