@@ -1,14 +1,20 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
+/* BEGIN: Глобальные общие стили */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: var(--box-sizing-base);
+}
+
+html {
+  font-size: var(--font-size-root);
+  block-size: 100%;
 }
 
 body {
-  min-inline-size: 375px;
-  max-inline-size: 1440px;
+  min-inline-size: var(--breakpoint-base);
+  max-inline-size: var(--breakpoint-xl);
   margin: 0 auto;
 }
 
@@ -28,6 +34,13 @@ ul {
   list-style: none;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-inline-size: 100%;
+}
+
 picture {
   margin: 0;
   padding: 0;
@@ -40,3 +53,4 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+/* END: Глобальные общие стили */

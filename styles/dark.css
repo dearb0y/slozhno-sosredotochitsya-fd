@@ -5,8 +5,20 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  /* BEGIN: Базовые переменные (палитры) цветов */
+  --color-primary: var(--color-fuchsia);
+  --color-secondary: var(--color-light-fuchsia);
+  /* ENG: Базовые переменные (палитры) цветов */
+
+  /* BEGIN: Переменные заголовков */
+  --headings-color: var(--color-dark-blue);
+  /* END: Переменные заголовков */
+
+  /* BEGIN: Переменные h1 */
+  --h1-color: var(--color-dark-fuchsia);
+  /* END: Переменные h1 */
+
+  /* BEGIN: Переменные h2 */
+  --h2-color: var(--color-primary);
+  /* END: Переменные h2 */
 }

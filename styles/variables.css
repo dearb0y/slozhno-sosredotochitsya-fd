@@ -2,3 +2,90 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* BEGIN: Общие базовые переменные */
+  --box-sizing-base: border-box;
+  /* END: Общие базовые переменные */
+
+  /* BEGIN: Базовые переменные брейкпоинтов */
+  --breakpoint-xs: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-base: var(--breakpoint-xs);
+  /* END: Базовые переменные брейкпоинтов */
+
+  /* BEGIN: Базовые переменные (палитры) цветов */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #353430;
+  --color-lightest-pink: #fff1f7;
+  --color-light-pink: #ffc2e6;
+  --color-pink: #ff8dcb;
+  --color-light-fuchsia: #f1b2ce;
+  --color-fuchsia: #ff0070;
+  --color-dark-fuchsia: #db00ff;
+  --color-dark-blue: #000028;
+  --color-primary: var(--color-pink);
+  --color-secondary: var(--color-gray);
+  --color-accent: var(--color-primary);
+  --color-base: var(--color-secondary);
+  /* ENG: Базовые переменные (палитры) цветов */
+
+  /* BEGIN: Базовые переменные шрифтов */
+  --font-family-primary: "IBM Plex Mono", "Courier New", monospace;
+  --font-family-base: var(--font-family-primary);
+  --font-size-root: 10px;
+  --font-size-base: 1.8rem;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-base: var(--font-weight-normal);
+  --font-style-base: normal;
+  --line-height-xs: 0.83;
+  --line-height-sm: 1;
+  --line-height-md: 1.3;
+  --line-height-normal: normal;
+  --line-height-base: var(--line-height-md);
+  --text-align-base: left;
+  /* END: Базовые переменные шрифтов */
+
+  /* BEGIN: Переменные body */
+  --body-font-family: var(--font-family-base);
+  --body-font-size: var(--font-size-base);
+  --body-font-weight: var(--font-weight-base);
+  --body-font-style: var(--font-style-base);
+  --body-line-height: var(--line-height-base);
+  --body-color: var(--color-base);
+  --body-bg-color: var(--color-lightest-pink);
+  /* END: Переменные body */
+
+  /* BEGIN: Переменные заголовков */
+  --headings-font-family: var(--font-family-base);
+  --headings-font-size: var(--font-size-base);
+  --headings-font-weight: var(--font-weight-bold);
+  --headings-line-height: var(--line-height-base);
+  --headings-text-transform: normal;
+  --headings-color: var(--color-base);
+  /* END: Переменные заголовков */
+
+  /* BEGIN: Переменные h1 */
+  --h1-font-size: 11.6rem;
+  --h1-line-height: var(--line-height-xs);
+  --h1-color: var(--color-light-pink);
+  --h1-text-shadow: var(--color-accent);
+  /* END: Переменные h1 */
+
+  /* BEGIN: Переменные h2 */
+  --h2-color: var(--headings-color);
+  /* END: Переменные h2 */
+
+  /* BEGIN: Переменные h3 */
+  --h3-color: var(--headings-color);
+  /* END: Переменные h3 */
+
+  /* BEGIN: Переменные h4 */
+  --h4-color: var(--headings-color);
+  --h4-font-weight: var(--font-weight-base);
+  /* END: Переменные h4 */
+}

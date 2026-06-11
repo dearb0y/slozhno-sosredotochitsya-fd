@@ -1,5 +1,16 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* BEGIN: Дополнительные общие и вспомогательные стили */
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  padding: 0;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  font-style: var(--body-font-style);
+  line-height: var(--body-line-height);
+  background-color: var(--body-bg-color);
+  color: var(--body-color);
+  inline-size: 100%;
+  block-size: 100%;
 }
+/* END: Дополнительные общие и вспомогательные стили */
