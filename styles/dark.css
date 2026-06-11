@@ -10,6 +10,11 @@
   --color-secondary: var(--color-light-fuchsia);
   /* ENG: Базовые переменные (палитры) цветов */
 
+  /* BEGIN: Переменные body */
+  --body-bg-color: var(--color-dark-blue);
+  --body-bg-image: url("../images/cover-image-dark.png");
+  /* END: Переменные body */
+
   /* BEGIN: Переменные заголовков */
   --headings-color: var(--color-dark-blue);
   /* END: Переменные заголовков */

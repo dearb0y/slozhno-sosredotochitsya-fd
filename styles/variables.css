@@ -58,6 +58,7 @@
   --body-line-height: var(--line-height-base);
   --body-color: var(--color-base);
   --body-bg-color: var(--color-lightest-pink);
+  --body-bg-image: url("../images/cover-image.png");
   /* END: Переменные body */
 
   /* BEGIN: Переменные заголовков */
