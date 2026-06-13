@@ -96,8 +96,8 @@
     var(--h1-font-size-lg)
   );
   --h1-line-height: var(--line-height-xs);
-  --h1-color: var(--color-pink-light);
   --h1-text-shadow: 4px 4px 0 var(--color-accent);
+  --h1-color: var(--color-pink-light);
   /* END: Переменные h1 (xxl) */
 
   /* BEGIN: Переменные h2 (xl) */
@@ -117,6 +117,19 @@
   --header-min-block-size: 668px;
   /* END: Переменные шапки сайта (header) */
 
+  /* BEGIN: Переменные кнопки смены темы (header__theme-menu-button) */
+  --theme-button-font-family: var(--font-family-base);
+  --theme-button-font-size: var(--font-size-base);
+  --theme-button-font-weight: var(--font-weight-base);
+  --theme-button-line-height: var(--line-height-sm);
+  --theme-button-text-align: center;
+  --theme-button-text-transform: lowercase;
+  --theme-button-text-decoration: none;
+  --theme-button-color: var(--color-base);
+  --theme-button-bg-color: transparent;
+  --theme-button-border: 1px solid currentColor;
+  /* END: Переменные кнопки смены темы (header__theme-menu-button) */
+
   /* BEGIN: Переменные основного контента сайта (content) */
   --content-padding-block-min: 4rem;
   --content-padding-block-max: 6rem;
@@ -133,6 +146,16 @@
   /* BEGIN: Переменные секции (section) */
   --section-gap: 2rem;
   /* END: Переменные секции (section) */
+
+  /* BEGIN: Переменные ссылки (link) */
+  --link-font-size: inherit;
+  --link-line-height: inherit;
+  --link-text-transform: inherit;
+  --link-text-decoration: none;
+  --link-text-shadow: 2px 2px 0 var(--color-accent);
+  --link-color: currentColor;
+  --link-border-block-end: none;
+  /* END: Переменные ссылки (link) */
 
   /* BEGIN: Переменные декорированной зоны (decorated-zone) */
   --decorated-padding: var(--container-padding);

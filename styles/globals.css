@@ -13,9 +13,9 @@ html {
 }
 
 body {
+  margin: 0 auto;
   min-inline-size: var(--breakpoint-base);
   max-inline-size: var(--breakpoint-xl);
-  margin: 0 auto;
 }
 
 h1,
@@ -35,9 +35,9 @@ ul {
 }
 
 img {
+  display: block;
   margin: 0;
   padding: 0;
-  display: block;
   max-inline-size: 100%;
 }
 

@@ -74,6 +74,7 @@
 
 .title_size_md {
   color: var(--h4-color);
+  font-weight: var(--h4-font-weight);
 }
 /* END: Стили заголовков сайта */
 
@@ -104,6 +105,37 @@
   inset-block-start: var(--header-padding-block);
 }
 /* END: Стили шапки сайта */
+
+/* BEGIN: Стили кнопки смены темы (header__theme-menu-button) */
+.header__theme-menu-button {
+  font-family: var(--theme-button-font-family);
+  font-size: var(--theme-button-font-size);
+  font-weight: var(--theme-button-font-weight);
+  line-height: var(--theme-button-line-height);
+  text-align: var(--theme-button-text-align);
+  text-transform: var(--theme-button-text-transform);
+  color: var(--theme-button-color);
+  background-color: var(--theme-button-bg-color);
+  border: var(--theme-button-border);
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  inline-size: fit-content;
+  block-size: fit-content;
+}
+
+.header__theme-menu-button:hover {
+  --link-border-block-end: 1px solid currentColor;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid currentColor;
+}
+/* END: Стили кнопки смены темы (header__theme-menu-button) */
 
 /* BEGIN: Стили основного контента сайта (content) */
 .content {
@@ -170,6 +202,33 @@
 }
 /* END: Стили текстовой карточки (text-card) */
 
+/* BEGIN: Стили ссылки (link) */
+.link {
+  margin: 0;
+  padding: 0;
+  color: var(--link-color);
+  border-block-end: var(--link-border-block-end);
+  font-size: var(--link-font-size);
+  line-height: var(--link-line-height);
+  text-decoration: var(--link-text-decoration);
+  text-transform: var(--link-text-transform);
+  text-shadow: var(--link-text-shadow);
+  cursor: pointer;
+}
+
+.link:hover {
+  --link-border-block-end: 1px solid currentColor;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
+/* END: Стили ссылки (link) */
+
 /* BEGIN: Стили декорированной зоны (decorated-zone) */
 .decorated-zone {
   position: relative;
@@ -195,9 +254,9 @@
 }
 
 .decorated-zone::after {
-  inset-inline-start: var(--decorated-padding);
-  inset-block-end: var(--decorated-padding);
   border-inline-start: 1px solid var(--decorated-color);
   border-block-end: 1px solid var(--decorated-color);
+  inset-inline-start: var(--decorated-padding);
+  inset-block-end: var(--decorated-padding);
 }
 /* END: Стили декорированной зоны (decorated-zone) */

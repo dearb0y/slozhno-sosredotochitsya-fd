@@ -36,6 +36,7 @@ function getGalleryPictureTemplate({ name, width, height, alt, className = 'gall
                     type="image/webp"
                   />
                   <img
+                    loading="lazy"
                     class="${className}-picture__media"
                     width="${width}"
                    height="${height}"
