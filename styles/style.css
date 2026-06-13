@@ -27,4 +27,87 @@
   display: block;
   background-color: var(--color-primary);
 }
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
 /* END: Дополнительные общие и вспомогательные стили */
+
+/* BEGIN: Стили заголовков */
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: var(--headings-font-family);
+  font-size: var(--headings-font-size);
+  font-weight: var(--headings-font-weight);
+  line-height: var(--headings-line-height);
+  text-transform: var(--headings-text-transform);
+  color: var(--headings-color);
+}
+
+.title_size_xxl {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  color: var(--h1-color);
+  text-shadow: var(--h1-text-shadow);
+}
+
+.title_size_xl {
+  color: var(--h2-color);
+}
+
+.title_size_lg {
+  color: var(--h3-color);
+}
+
+.title_size_md {
+  color: var(--h4-color);
+}
+/* END: Стили заголовков */
+
+/* BEGIN: Стили основного контента Content */
+.content {
+  margin: 0;
+  padding: 0;
+  display: block;
+  inline-size: 100%;
+}
+
+.content__inner {
+  margin: 0 auto;
+  padding: 0;
+}
+/* END: Стили основного контента Content */
+
+/* BEGIN: Стили секции Section */
+.section {
+  margin: 0;
+  padding: 0;
+  display: block;
+  inline-size: 100%;
+}
+
+.section__inner {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content__section {
+  --margin-bottom-min: 4rem;
+  --margin-bottom-max: 8rem;
+  margin-block-end: clamp(
+    var(--margin-bottom-min),
+    calc(1.832px + 10.178vw),
+    var(--margin-bottom-max)
+  );
+}
+/* END: Стили секции Section */
