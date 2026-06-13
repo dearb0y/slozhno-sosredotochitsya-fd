@@ -3,21 +3,23 @@
 /* BEGIN: Дополнительные общие и вспомогательные стили */
 .page {
   padding: 0;
+  color: var(--body-color);
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);
+  font-size: var(--body-font-size);
   font-style: var(--body-font-style);
   line-height: var(--body-line-height);
   background-color: var(--body-bg-color);
   background-image: var(--body-bg-image);
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
-  color: var(--body-color);
   inline-size: 100%;
   block-size: 100%;
 }
 
 .container {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 10px;
   inline-size: 100%;
   max-inline-size: var(--breakpoint-xl);
@@ -30,13 +32,13 @@
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   white-space: nowrap;
   clip-path: inset(50%);
 }
@@ -46,18 +48,18 @@
 .title {
   margin: 0;
   padding: 0;
+  color: var(--headings-color);
   font-family: var(--headings-font-family);
-  font-size: var(--headings-font-size);
   font-weight: var(--headings-font-weight);
+  font-size: var(--headings-font-size);
   line-height: var(--headings-line-height);
   text-transform: var(--headings-text-transform);
-  color: var(--headings-color);
 }
 
 .title_size_xxl {
+  color: var(--h1-color);
   font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
-  color: var(--h1-color);
   text-shadow: var(--h1-text-shadow);
 }
 
@@ -76,9 +78,9 @@
 
 /* BEGIN: Стили основного контента Content */
 .content {
+  display: block;
   margin: 0;
   padding: 0;
-  display: block;
   inline-size: 100%;
 }
 
@@ -90,17 +92,26 @@
 
 /* BEGIN: Стили секции Section */
 .section {
+  --section-gap: 2rem;
+  display: block;
   margin: 0;
   padding: 0;
-  display: block;
   inline-size: 100%;
 }
 
 .section__inner {
+  display: grid;
+  gap: var(--section-gap);
   margin: 0 auto;
   padding: 0;
 }
 
+.section__content {
+  display: grid;
+  gap: var(--section-gap);
+  margin: 0 auto;
+  padding: 0;
+}
 .content__section {
   --margin-bottom-min: 4rem;
   --margin-bottom-max: 8rem;
