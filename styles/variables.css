@@ -50,17 +50,6 @@
   --text-align-base: left;
   /* END: Базовые переменные шрифтов */
 
-  /* BEGIN: Переменные контейнера (container) */
-  --container-padding-min: 1rem;
-  --container-padding-max: 2rem;
-  --container-padding: clamp(
-    var(--container-padding-min),
-    calc(0.041rem + 2.551vw),
-    var(--container-padding-max)
-  );
-  --container-max-inline-size: var(--breakpoint-xl);
-  /* END: Переменные контейнера (container)
-
   /* BEGIN: Переменные body (page) */
   --body-font-family: var(--font-family-base);
   --body-font-size: var(--font-size-base);
@@ -71,6 +60,17 @@
   --body-bg-color: var(--color-pink-lightest);
   --body-bg-image: url("../images/cover-image.png");
   /* END: Переменные body (page) */
+
+  /* BEGIN: Переменные контейнера (container) */
+  --container-padding-min: 1rem;
+  --container-padding-max: 2rem;
+  --container-padding: clamp(
+    var(--container-padding-min),
+    calc(0.041rem + 2.551vw),
+    var(--container-padding-max)
+  );
+  --container-max-inline-size: var(--breakpoint-xl);
+  /* END: Переменные контейнера (container) */
 
   /* BEGIN: Переменные заголовков (title) */
   --headings-font-family: var(--font-family-base);
@@ -112,4 +112,31 @@
   --h4-color: var(--headings-color);
   --h4-font-weight: var(--font-weight-base);
   /* END: Переменные h4 (md) */
+
+  /* BEGIN: Переменные шапки сайта (header) */
+  --header-min-block-size: 668px;
+  /* END: Переменные шапки сайта (header) */
+
+  /* BEGIN: Переменные основного контента сайта (content) */
+  --content-padding-block-min: 4rem;
+  --content-padding-block-max: 6rem;
+  --content-padding-block: clamp(
+    var(--content-padding-block-min),
+    calc(2.082rem + 5.102vw),
+    var(--content-padding-block-max)
+  );
+  --content-gap-min: 4rem;
+  --content-gap-max: 8rem;
+  --content-gap: clamp(var(--content-gap-min), calc(0.183rem + 10.178vw), var(--content-gap-max));
+  /* END: Переменные основного контента сайта (content) */
+
+  /* BEGIN: Переменные секции (section) */
+  --section-gap: 2rem;
+  /* END: Переменные секции (section) */
+
+  /* BEGIN: Переменные декорированной зоны (decorated-zone) */
+  --decorated-padding: var(--container-padding);
+  --decorated-color: var(--color-base);
+  --decorated-decor-element-size: 2.5rem;
+  /* END: Переменные декорированной зоны (decorated-zone) */
 }

@@ -10,26 +10,24 @@
   --color-secondary: var(--color-fuchsia-light);
   /* ENG: Базовые переменные (палитры) цветов */
 
-  /* BEGIN: Переменные body */
+  /* BEGIN: Переменные body (page) */
   --body-bg-color: var(--color-blue-dark);
   --body-bg-image: url("../images/cover-image-dark.png");
-  /* END: Переменные body */
+  /* END: Переменные body (page) */
 
-  /* BEGIN: Переменные заголовков */
+  /* BEGIN: Переменные заголовков (title) */
   --headings-color: var(--color-blue-dark);
-  /* END: Переменные заголовков */
+  /* END: Переменные заголовков (title) */
 
-  /* BEGIN: Переменные h1 (xxl */
+  /* BEGIN: Переменные h1 (xxl) */
   --h1-color: var(--color-fuchsia-dark);
   /* END: Переменные h1 (xxl) */
 
   /* BEGIN: Переменные h2 (xl) */
   --h2-color: var(--color-primary);
   /* END: Переменные h2 (xl) */
-}
 
-/* BEGIN: DARK стили декорированной зоны (decorated-zone) */
-:root.theme-dark .decorated-zone {
+  /* BEGIN: Переменные декорированной зоны (decorated-zone) */
   --decorated-color: var(--color-accent);
+  /* END: Переменные декорированной зоны (decorated-zone) */
 }
-/* END: DARK стили декорированной зоны (decorated-zone) */
