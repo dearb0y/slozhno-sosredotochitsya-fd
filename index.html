@@ -15,7 +15,7 @@
       property="og:description"
       content="Страница, описывающая, что делать при потере фокуса."
     />
-    <link href="./styles/fonts.css" rel="stylesheet" />
+    <link href="./fonts/fonts.css" rel="stylesheet" />
     <link href="./styles/variables.css" rel="stylesheet" />
     <link href="./styles/globals.css" rel="stylesheet" />
     <link href="./styles/style.css" rel="stylesheet" />
@@ -25,44 +25,52 @@
     <script src="./scripts/script.js"></script>
   </head>
 
-  <body class="page container">
+  <body class="page">
     <!-- BEGIN: Шапка сайта -->
     <header class="header decorated-zone">
-      <!-- BEGIN: Навигация сайта по смене темы -->
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button class="header__theme-menu-button header__theme-menu-button_type_light">
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button class="header__theme-menu-button header__theme-menu-button_type_dark">
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <!-- END: Навигация сайта по смене темы -->
+      <div class="header__inner">
+        <span aria-hidden="true" role="presentation" class="header__decor">REC</span>
+        <!-- BEGIN: Навигация сайта по смене темы -->
+        <nav class="header__theme-menu">
+          <ul class="header__theme-menu-list">
+            <li class="header__theme-menu-item">
+              <button class="header__theme-menu-button header__theme-menu-button_type_light">
+                День
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button
+                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                disabled
+              >
+                Авто
+              </button>
+            </li>
+            <li class="header__theme-menu-item">
+              <button class="header__theme-menu-button header__theme-menu-button_type_dark">
+                Неон
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <!-- END: Навигация сайта по смене темы -->
+        <h1 class="title title_size_xxl header__title">no focus</h1>
+        <p class="title title_size_lg header__description has-bg">
+          Что делать, когда не можешь делать ничего Или почему нам так сложно сконцентрироваться,
+          особенно когда очень надо
+        </p>
+      </div>
     </header>
     <!-- END: Шапка сайта -->
     <!-- BEGIN: Основная часть сайта-->
-    <main class="content">
+    <main class="content container">
       <div class="content__inner">
         <!-- BEGIN: Секция "Почему сосредоточиться так сложно" -->
-        <section class="section content__section">
+        <section class="section">
           <div class="section__inner">
-            <h2 class="title title_size_xl content__title">Почему сосредоточиться так сложно</h2>
+            <h2 class="title title_size_xl">Почему сосредоточиться так сложно</h2>
             <div class="section__content">
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Многозадачность</h3>
                   <p class="text-card__content">
@@ -76,7 +84,7 @@
                   </p>
                 </div>
               </article>
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Дофамин</h3>
                   <p class="text-card__content">
@@ -95,11 +103,11 @@
         </section>
         <!-- END: Секция "Почему сосредоточиться так сложно" -->
         <!-- BEGIN: Секция "Что снижает концентрацию внимания?" -->
-        <section class="section content__section">
+        <section class="section">
           <div class="section__inner">
-            <h2 class="title title_size_xl content__title">Что снижает концентрацию внимания?</h2>
+            <h2 class="title title_size_xl">Что снижает концентрацию внимания?</h2>
             <div class="section__content">
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Концентрация</h3>
                   <p class="text-card__content">
@@ -111,7 +119,7 @@
                   </p>
                 </div>
               </article>
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Еда</h3>
                   <p class="text-card__content">
@@ -123,7 +131,7 @@
                   </p>
                 </div>
               </article>
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Гаджеты</h3>
                   <p class="text-card__content">
@@ -141,13 +149,13 @@
         </section>
         <!-- END: Секция "Что снижает концентрацию внимания?" -->
         <!-- BEGIN: Секция "Как концентрироваться лучше, чем рыба" -->
-        <section class="section content__section">
+        <section class="section">
           <div class="section__inner">
-            <h2 class="title title_size_xl content__title">
+            <h2 class="title title_size_xl">
               Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)
             </h2>
             <div class="section__content">
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">
                     Представьте небо и облака
@@ -163,7 +171,7 @@
                   </p>
                 </div>
               </article>
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Включите музыку</h3>
                   <p class="text-card__content">
@@ -174,7 +182,7 @@
                   </p>
                 </div>
               </article>
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Прогуляйтесь</h3>
                   <p class="text-card__content">
@@ -187,7 +195,7 @@
                   </p>
                 </div>
               </article>
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Хорошо ешьте</h3>
                   <p class="text-card__content">
@@ -198,7 +206,7 @@
                   </p>
                 </div>
               </article>
-              <article class="text-card content__text-card">
+              <article class="text-card">
                 <div class="text-card__inner">
                   <h3 class="title title_size_lg text-card__title has-bg">Читайте</h3>
                   <p class="text-card__content">
@@ -214,9 +222,9 @@
         </section>
         <!-- END: Секция "Как концентрироваться лучше, чем рыба" -->
         <!-- BEGIN: Секция "А можно в картинках?" -->
-        <section class="section content__section">
+        <section class="section">
           <div class="section__inner">
-            <h2 class="title title_size_lg content__title has-bg">А можно в картинках?</h2>
+            <h2 class="title title_size_lg has-bg">А можно в картинках?</h2>
             <div class="section__content">
               <!-- BEGIN: Галерея изображений -->
               <div class="gallery">

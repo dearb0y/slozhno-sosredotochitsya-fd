@@ -20,13 +20,13 @@
   --color-white: #fff;
   --color-black: #000;
   --color-gray: #353430;
-  --color-lightest-pink: #fff1f7;
-  --color-light-pink: #ffc2e6;
+  --color-pink-lightest: #fff1f7;
+  --color-pink-light: #ffc2e6;
   --color-pink: #ff8dcb;
-  --color-light-fuchsia: #f1b2ce;
+  --color-fuchsia-light: #f1b2ce;
   --color-fuchsia: #ff0070;
-  --color-dark-fuchsia: #db00ff;
-  --color-dark-blue: #000028;
+  --color-fuchsia-dark: #db00ff;
+  --color-blue-dark: #000028;
   --color-primary: var(--color-pink);
   --color-secondary: var(--color-gray);
   --color-accent: var(--color-primary);
@@ -34,7 +34,7 @@
   /* ENG: Базовые переменные (палитры) цветов */
 
   /* BEGIN: Базовые переменные шрифтов */
-  --font-family-primary: "IBM Plex Mono", "Courier New", monospace;
+  --font-family-primary: "IBM Plex mono", "Courier New", monospace;
   --font-family-base: var(--font-family-primary);
   --font-size-root: 10px;
   --font-size-base: 1.8rem;
@@ -50,31 +50,54 @@
   --text-align-base: left;
   /* END: Базовые переменные шрифтов */
 
-  /* BEGIN: Переменные body */
+  /* BEGIN: Переменные контейнера (container) */
+  --container-padding-min: 1rem;
+  --container-padding-max: 2rem;
+  --container-padding: clamp(
+    var(--container-padding-min),
+    calc(0.041rem + 2.551vw),
+    var(--container-padding-max)
+  );
+  --container-max-inline-size: var(--breakpoint-xl);
+  /* END: Переменные контейнера (container)
+
+  /* BEGIN: Переменные body (page) */
   --body-font-family: var(--font-family-base);
   --body-font-size: var(--font-size-base);
   --body-font-weight: var(--font-weight-base);
   --body-font-style: var(--font-style-base);
   --body-line-height: var(--line-height-base);
   --body-color: var(--color-base);
-  --body-bg-color: var(--color-lightest-pink);
+  --body-bg-color: var(--color-pink-lightest);
   --body-bg-image: url("../images/cover-image.png");
-  /* END: Переменные body */
+  /* END: Переменные body (page) */
 
-  /* BEGIN: Переменные заголовков */
+  /* BEGIN: Переменные заголовков (title) */
   --headings-font-family: var(--font-family-base);
   --headings-font-size: var(--font-size-base);
   --headings-font-weight: var(--font-weight-bold);
   --headings-line-height: var(--line-height-base);
   --headings-text-transform: normal;
   --headings-color: var(--color-base);
-  /* END: Переменные заголовков */
+  /* END: Переменные заголовков (title) */
 
   /* BEGIN: Переменные h1 (xxl) */
-  --h1-font-size: 11.6rem;
+  --h1-font-size-sm: 11.6rem;
+  --h1-font-size-md: 12rem;
+  --h1-font-size-lg: 15.7rem;
+  --h1-font-size-mobile: clamp(
+    var(--h1-font-size-sm),
+    calc(11.218rem + 1.018vw),
+    var(--h1-font-size-md)
+  );
+  --h1-font-size-tablet: clamp(
+    var(--h1-font-size-md),
+    calc(0.9rem + 14.453vw),
+    var(--h1-font-size-lg)
+  );
   --h1-line-height: var(--line-height-xs);
-  --h1-color: var(--color-light-pink);
-  --h1-text-shadow: var(--color-accent);
+  --h1-color: var(--color-pink-light);
+  --h1-text-shadow: 4px 4px 0 var(--color-accent);
   /* END: Переменные h1 (xxl) */
 
   /* BEGIN: Переменные h2 (xl) */

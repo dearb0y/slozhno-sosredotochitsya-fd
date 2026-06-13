@@ -7,23 +7,29 @@
 :root.theme-dark {
   /* BEGIN: Базовые переменные (палитры) цветов */
   --color-primary: var(--color-fuchsia);
-  --color-secondary: var(--color-light-fuchsia);
+  --color-secondary: var(--color-fuchsia-light);
   /* ENG: Базовые переменные (палитры) цветов */
 
   /* BEGIN: Переменные body */
-  --body-bg-color: var(--color-dark-blue);
+  --body-bg-color: var(--color-blue-dark);
   --body-bg-image: url("../images/cover-image-dark.png");
   /* END: Переменные body */
 
   /* BEGIN: Переменные заголовков */
-  --headings-color: var(--color-dark-blue);
+  --headings-color: var(--color-blue-dark);
   /* END: Переменные заголовков */
 
   /* BEGIN: Переменные h1 (xxl */
-  --h1-color: var(--color-dark-fuchsia);
+  --h1-color: var(--color-fuchsia-dark);
   /* END: Переменные h1 (xxl) */
 
   /* BEGIN: Переменные h2 (xl) */
   --h2-color: var(--color-primary);
   /* END: Переменные h2 (xl) */
 }
+
+/* BEGIN: DARK стили декорированной зоны (decorated-zone) */
+:root.theme-dark .decorated-zone {
+  --decorated-color: var(--color-accent);
+}
+/* END: DARK стили декорированной зоны (decorated-zone) */
