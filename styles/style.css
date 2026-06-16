@@ -22,7 +22,6 @@
   margin: 0 auto;
   padding: 0 var(--container-padding);
   inline-size: 100%;
-  block-size: 100%;
   max-inline-size: var(--breakpoint-xl);
 }
 
@@ -78,7 +77,7 @@
 }
 /* END: Стили заголовков сайта */
 
-/* BEGIN: Стили шапки сайта */
+/* BEGIN: Стили шапки сайта (header) */
 .header {
   display: block;
   margin: 0;
@@ -106,7 +105,7 @@
   inset-inline-end: var(--header-decor-padding);
   inset-block-start: 0;
 }
-/* END: Стили шапки сайта */
+/* END: Стили шапки сайта (header) */
 
 /* BEGIN: Стили кнопки смены темы (header__theme-menu-button) */
 .header__theme-menu-button {
@@ -231,6 +230,73 @@
   outline: 1px solid currentColor;
 }
 /* END: Стили ссылки (link) */
+
+/* BEGIN: Стили галереи (gallery) */
+.gallery {
+  display: block;
+  margin: 0;
+  padding: 0;
+  inline-size: 100%;
+}
+
+.gallery__list {
+  display: grid;
+  gap: var(--section-gap);
+  margin: 0 auto;
+  padding: 0;
+  inline-size: 100%;
+}
+
+.gallery__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  inline-size: 100%;
+}
+
+.gallery-picture {
+  display: block;
+  margin: 0;
+  padding: 0;
+  inline-size: 100%;
+}
+
+.gallery-picture__media {
+  display: block;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
+}
+/* END: Стили галереи (gallery) */
+
+/* BEGIN: Стили подвала сайта (footer) */
+.footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+  inline-size: 100%;
+  block-size: 100dvh;
+  min-block-size: var(--footer-min-block-size);
+}
+
+.footer__inner {
+  position: relative;
+  display: grid;
+  place-content: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  inline-size: 100%;
+  block-size: 100%;
+}
+
+.footer__text {
+  text-shadow: var(--footer-text-shadow);
+}
+/* END: Стили подвала сайта (footer) */
 
 /* BEGIN: Стили декорированной зоны (decorated-zone) */
 .decorated-zone {

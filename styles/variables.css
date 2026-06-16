@@ -160,6 +160,11 @@
   --link-border-block-end: none;
   /* END: Переменные ссылки (link) */
 
+  /* BEGIN: Переменные подвала сайта (footer) */
+  --footer-min-block-size: var(--header-min-block-size);
+  --footer-text-shadow: 2px 2px 0 var(--color-accent);
+  /* END: Переменные подвала сайта (footer) */
+
   /* BEGIN: Переменные декорированной зоны (decorated-zone) */
   --decorated-padding: var(--container-padding);
   --decorated-color: var(--color-base);
