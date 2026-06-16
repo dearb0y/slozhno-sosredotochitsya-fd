@@ -94,25 +94,76 @@
   padding: 0;
   inline-size: 100%;
   block-size: 100%;
+  justify-items: end;
+  align-items: center;
+}
+
+.header__title {
+  justify-self: start;
+}
+
+.header__description {
+  inline-size: var(--header-description-inline-size);
 }
 
 .header__decor {
   position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   margin: 0;
   padding: 0;
+  color: var(--decorated-color);
   line-height: var(--header-decor-line-height);
   text-align: var(--header-decor-text-align);
   inset-inline-end: var(--header-decor-padding);
   inset-block-start: 0;
 }
+
+.header__decor::after {
+  content: "";
+  display: block;
+  margin: 0;
+  border-radius: 100%;
+  padding: 0;
+  box-shadow: 0 0 4px 2px currentColor;
+  background-color: currentColor;
+  inline-size: 0.5em;
+  block-size: 0.5em;
+}
 /* END: Стили шапки сайта (header) */
+
+/* BEGIN: Стили навигации сайта по смене темы (header__theme-menu) */
+.header__theme-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__theme-menu-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  inline-size: 100%;
+}
+/* END: Стили навигации сайта по смене темы (header__theme-menu) */
 
 /* BEGIN: Стили кнопки смены темы (header__theme-menu-button) */
 .header__theme-menu-button {
+  position: relative;
   display: inline-flex;
   margin: 0;
   border: var(--theme-button-border);
   padding: var(--theme-button-padding);
+  outline: var(--theme-button-outline);
   color: var(--theme-button-color);
   font-family: var(--theme-button-font-family);
   font-weight: var(--theme-button-font-weight);
@@ -126,16 +177,29 @@
   block-size: fit-content;
 }
 
+.header__theme-menu-button:hover {
+  --theme-button-outline: 1px solid rgb(from var(--theme-button-color) r g b / 0.4);
+}
+
 .header__theme-menu-button_active {
-  --theme-button-border: 1px solid currentColor;
+  --theme-button-outline: 1px solid currentColor;
 }
 
 .header__theme-menu-button:focus {
   outline: none;
 }
 
-.header__theme-menu-button:focus-visible {
-  outline: 1px solid currentColor;
+.header__theme-menu-button:focus-visible::after {
+  content: "";
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: currentColor;
+  transform: translate(-50%, 0);
+  inset-inline-start: 50%;
+  inset-block-end: 0;
+  inline-size: calc(100% - 6px);
+  block-size: 1px;
 }
 /* END: Стили кнопки смены темы (header__theme-menu-button) */
 

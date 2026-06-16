@@ -115,7 +115,11 @@
 
   /* BEGIN: Переменные шапки сайта (header) */
   --header-min-block-size: 668px;
-  --header-decor-padding: calc(var(--container-padding) + 1rem);
+  --header-description-inline-size: max(
+    50%,
+    calc(var(--breakpoint-base) - 2 * var(--container-padding))
+  );
+  --header-decor-padding: 1rem;
   --header-decor-line-height: 1.39;
   --header-decor-text-align: center;
   /* END: Переменные шапки сайта (header) */
@@ -131,6 +135,7 @@
   --theme-button-color: var(--color-base);
   --theme-button-bg-color: transparent;
   --theme-button-border: none;
+  --theme-button-outline: none;
   /* END: Переменные кнопки смены темы (header__theme-menu-button) */
 
   /* BEGIN: Переменные основного контента сайта (content) */
