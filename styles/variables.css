@@ -115,19 +115,22 @@
 
   /* BEGIN: Переменные шапки сайта (header) */
   --header-min-block-size: 668px;
+  --header-decor-padding: calc(var(--container-padding) + 1rem);
+  --header-decor-line-height: 1.39;
+  --header-decor-text-align: center;
   /* END: Переменные шапки сайта (header) */
 
   /* BEGIN: Переменные кнопки смены темы (header__theme-menu-button) */
+  --theme-button-padding: 0.3rem 1.25rem;
   --theme-button-font-family: var(--font-family-base);
   --theme-button-font-size: var(--font-size-base);
   --theme-button-font-weight: var(--font-weight-base);
   --theme-button-line-height: var(--line-height-sm);
   --theme-button-text-align: center;
   --theme-button-text-transform: lowercase;
-  --theme-button-text-decoration: none;
   --theme-button-color: var(--color-base);
   --theme-button-bg-color: transparent;
-  --theme-button-border: 1px solid currentColor;
+  --theme-button-border: none;
   /* END: Переменные кнопки смены темы (header__theme-menu-button) */
 
   /* BEGIN: Переменные основного контента сайта (content) */

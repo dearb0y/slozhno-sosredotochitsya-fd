@@ -101,31 +101,34 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  inset-inline-end: var(--header-padding-block);
-  inset-block-start: var(--header-padding-block);
+  line-height: var(--header-decor-line-height);
+  text-align: var(--header-decor-text-align);
+  inset-inline-end: var(--header-decor-padding);
+  inset-block-start: 0;
 }
 /* END: Стили шапки сайта */
 
 /* BEGIN: Стили кнопки смены темы (header__theme-menu-button) */
 .header__theme-menu-button {
+  display: inline-flex;
+  margin: 0;
+  border: var(--theme-button-border);
+  padding: var(--theme-button-padding);
+  color: var(--theme-button-color);
   font-family: var(--theme-button-font-family);
-  font-size: var(--theme-button-font-size);
   font-weight: var(--theme-button-font-weight);
+  font-size: var(--theme-button-font-size);
   line-height: var(--theme-button-line-height);
   text-align: var(--theme-button-text-align);
   text-transform: var(--theme-button-text-transform);
-  color: var(--theme-button-color);
   background-color: var(--theme-button-bg-color);
-  border: var(--theme-button-border);
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
+  cursor: pointer;
   inline-size: fit-content;
   block-size: fit-content;
 }
 
-.header__theme-menu-button:hover {
-  --link-border-block-end: 1px solid currentColor;
+.header__theme-menu-button_active {
+  --theme-button-border: 1px solid currentColor;
 }
 
 .header__theme-menu-button:focus {
@@ -205,9 +208,9 @@
 /* BEGIN: Стили ссылки (link) */
 .link {
   margin: 0;
+  border-block-end: var(--link-border-block-end);
   padding: 0;
   color: var(--link-color);
-  border-block-end: var(--link-border-block-end);
   font-size: var(--link-font-size);
   line-height: var(--link-line-height);
   text-decoration: var(--link-text-decoration);

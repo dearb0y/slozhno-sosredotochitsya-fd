@@ -5,7 +5,7 @@
 */
 
 :root.theme-light {
-  /* BEGIN: Переменные body */
+  /* BEGIN: Переменные body (page) */
   --body-bg-image: url("../images/cover-image-light.png");
-  /* END: Переменные body */
+  /* END: Переменные body (page) */
 }
