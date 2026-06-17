@@ -150,9 +150,9 @@
     calc(2.082rem + 5.102vw),
     var(--content-padding-block-max)
   );
-  --content-gap-min: 4rem;
+  --content-gap-min: 5rem;
   --content-gap-max: 8rem;
-  --content-gap: clamp(var(--content-gap-min), calc(0.183rem + 10.178vw), var(--content-gap-max));
+  --content-gap: clamp(var(--content-gap-min), calc(2.137rem + 7.634vw), var(--content-gap-max));
   /* END: Переменные основного контента сайта (content) */
 
   /* BEGIN: Переменные общей секции (section) */
