@@ -5,7 +5,176 @@
 */
 
 :root.theme-light {
+  /* BEGIN: Общие базовые переменные */
+  --box-sizing-base: border-box;
+  /* END: Общие базовые переменные */
+
+  /* BEGIN: Базовые переменные брейкпоинтов */
+  --breakpoint-xs: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-base: var(--breakpoint-xs);
+  /* END: Базовые переменные брейкпоинтов */
+
+  /* BEGIN: Базовые переменные (палитры) цветов */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-gray: #353430;
+  --color-pink-lightest: #fff1f7;
+  --color-pink-light: #ffc2e6;
+  --color-pink: #ff8dcb;
+  --color-fuchsia-light: #f1b2ce;
+  --color-fuchsia: #ff0070;
+  --color-fuchsia-dark: #db00ff;
+  --color-blue-dark: #000028;
+  --color-primary: var(--color-pink);
+  --color-secondary: var(--color-gray);
+  --color-accent: var(--color-primary);
+  --color-base: var(--color-secondary);
+  /* ENG: Базовые переменные (палитры) цветов */
+
+  /* BEGIN: Базовые переменные шрифтов */
+  --font-family-primary: "IBM Plex mono", "Courier New", monospace;
+  --font-family-base: var(--font-family-primary);
+  --font-size-root: 10px;
+  --font-size-base: 1.8rem;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-base: var(--font-weight-normal);
+  --font-style-base: normal;
+  --line-height-xs: 0.83;
+  --line-height-sm: 1;
+  --line-height-md: 1.3;
+  --line-height-normal: normal;
+  --line-height-base: var(--line-height-md);
+  --text-align-base: left;
+  /* END: Базовые переменные шрифтов */
+
   /* BEGIN: Переменные body (page) */
+  --body-font-family: var(--font-family-base);
+  --body-font-size: var(--font-size-base);
+  --body-font-weight: var(--font-weight-base);
+  --body-font-style: var(--font-style-base);
+  --body-line-height: var(--line-height-base);
+  --body-color: var(--color-base);
+  --body-bg-color: var(--color-pink-lightest);
   --body-bg-image: url("../images/cover-image-light.png");
   /* END: Переменные body (page) */
+
+  /* BEGIN: Переменные контейнера (container) */
+  --container-padding-min: 1rem;
+  --container-padding-max: 2rem;
+  --container-padding: clamp(
+    var(--container-padding-min),
+    calc(0.041rem + 2.551vw),
+    var(--container-padding-max)
+  );
+  --container-max-inline-size: var(--breakpoint-xl);
+  /* END: Переменные контейнера (container) */
+
+  /* BEGIN: Переменные заголовков (title) */
+  --headings-font-family: var(--font-family-base);
+  --headings-font-size: var(--font-size-base);
+  --headings-font-weight: var(--font-weight-bold);
+  --headings-line-height: var(--line-height-base);
+  --headings-text-transform: normal;
+  --headings-color: var(--color-base);
+  /* END: Переменные заголовков (title) */
+
+  /* BEGIN: Переменные h1 (xxl) */
+  --h1-font-size-sm: 11.6rem;
+  --h1-font-size-md: 12rem;
+  --h1-font-size-lg: 15.7rem;
+  --h1-font-size-mobile: clamp(
+    var(--h1-font-size-sm),
+    calc(11.218rem + 1.018vw),
+    var(--h1-font-size-md)
+  );
+  --h1-font-size-tablet: clamp(
+    var(--h1-font-size-md),
+    calc(0.9rem + 14.453vw),
+    var(--h1-font-size-lg)
+  );
+  --h1-line-height: var(--line-height-xs);
+  --h1-text-shadow: 4px 4px 0 var(--color-accent);
+  --h1-color: var(--color-pink-light);
+  /* END: Переменные h1 (xxl) */
+
+  /* BEGIN: Переменные h2 (xl) */
+  --h2-color: var(--headings-color);
+  /* END: Переменные h2 (xl) */
+
+  /* BEGIN: Переменные h3 (lg) */
+  --h3-color: var(--headings-color);
+  /* END: Переменные h3 (lg) */
+
+  /* BEGIN: Переменные h4 (md) */
+  --h4-color: var(--headings-color);
+  --h4-font-weight: var(--font-weight-base);
+  /* END: Переменные h4 (md) */
+
+  /* BEGIN: Переменные шапки сайта (header) */
+  --header-min-block-size: 668px;
+  --header-description-inline-size: max(
+    50%,
+    calc(var(--breakpoint-base) - 2 * var(--container-padding))
+  );
+  --header-decor-display: none;
+  --header-decor-padding: 1rem;
+  --header-decor-line-height: 1.39;
+  --header-decor-text-align: center;
+  /* END: Переменные шапки сайта (header) */
+
+  /* BEGIN: Переменные кнопки смены темы (header__theme-menu-button) */
+  --theme-button-padding: 0.3rem 1.25rem;
+  --theme-button-font-family: var(--font-family-base);
+  --theme-button-font-size: var(--font-size-base);
+  --theme-button-font-weight: var(--font-weight-base);
+  --theme-button-line-height: var(--line-height-sm);
+  --theme-button-text-align: center;
+  --theme-button-text-transform: lowercase;
+  --theme-button-color: var(--color-base);
+  --theme-button-bg-color: transparent;
+  --theme-button-border: none;
+  --theme-button-outline: none;
+  /* END: Переменные кнопки смены темы (header__theme-menu-button) */
+
+  /* BEGIN: Переменные основного контента сайта (content) */
+  --content-padding-block-min: 4rem;
+  --content-padding-block-max: 6rem;
+  --content-padding-block: clamp(
+    var(--content-padding-block-min),
+    calc(2.082rem + 5.102vw),
+    var(--content-padding-block-max)
+  );
+  --content-gap-min: 4rem;
+  --content-gap-max: 8rem;
+  --content-gap: clamp(var(--content-gap-min), calc(0.183rem + 10.178vw), var(--content-gap-max));
+  /* END: Переменные основного контента сайта (content) */
+
+  /* BEGIN: Переменные секции (section) */
+  --section-gap: 2rem;
+  /* END: Переменные секции (section) */
+
+  /* BEGIN: Переменные ссылки (link) */
+  --link-font-size: inherit;
+  --link-line-height: inherit;
+  --link-text-transform: inherit;
+  --link-text-decoration: none;
+  --link-text-shadow: 2px 2px 0 var(--color-accent);
+  --link-color: currentColor;
+  --link-border-block-end: none;
+  /* END: Переменные ссылки (link) */
+
+  /* BEGIN: Переменные подвала сайта (footer) */
+  --footer-min-block-size: var(--header-min-block-size);
+  --footer-text-shadow: 2px 2px 0 var(--color-accent);
+  /* END: Переменные подвала сайта (footer) */
+
+  /* BEGIN: Переменные декорированной зоны (decorated-zone) */
+  --decorated-padding: var(--container-padding);
+  --decorated-color: var(--color-base);
+  --decorated-decor-element-size: 2.5rem;
+  /* END: Переменные декорированной зоны (decorated-zone) */
 }

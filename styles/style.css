@@ -90,12 +90,12 @@
 .header__inner {
   position: relative;
   display: grid;
+  justify-items: end;
+  align-items: center;
   margin: 0 auto;
   padding: 0;
   inline-size: 100%;
   block-size: 100%;
-  justify-items: end;
-  align-items: center;
 }
 
 .header__title {
@@ -108,7 +108,7 @@
 
 .header__decor {
   position: absolute;
-  display: flex;
+  display: var(--header-decor-display);
   align-items: center;
   gap: 1rem;
   margin: 0;
@@ -183,6 +183,7 @@
 
 .header__theme-menu-button_active {
   --theme-button-outline: 1px solid currentColor;
+  pointer-events: none;
 }
 
 .header__theme-menu-button:focus {

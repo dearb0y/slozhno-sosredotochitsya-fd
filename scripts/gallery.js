@@ -1,3 +1,5 @@
+'use strict';
+
 /* Файл для создания галереи изображений */
 
 // Массив данных изображений галереи.
@@ -6,7 +8,7 @@ const NAMES = [
   { name: 'ice-cream', width: '355', height: '355', alt: 'мороженого' },
   { name: 'tape', width: '355', height: '237', alt: 'кассеты' },
   { name: 'books', width: '355', height: '355', alt: 'книг' },
-  { name: 'sunset', width: '355', height: '237', alt: 'заката' },
+  { name: 'street', width: '355', height: '237', alt: 'улицы' },
 ];
 
 /**
@@ -94,3 +96,5 @@ function getTemplate(data) {
   element.innerHTML = data;
   return element.firstChild;
 }
+
+export { getGalleryTemplate as default };
