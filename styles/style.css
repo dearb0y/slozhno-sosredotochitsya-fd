@@ -58,7 +58,7 @@
 
 .title_size_xxl {
   color: var(--h1-color);
-  font-size: var(--h1-font-size-mobile);
+  font-size: var(--h1-font-size);
   line-height: var(--h1-line-height);
   text-shadow: var(--h1-text-shadow);
 }
@@ -90,6 +90,7 @@
 .header__inner {
   position: relative;
   display: grid;
+  grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
   align-items: center;
   margin: 0 auto;
@@ -100,6 +101,7 @@
 
 .header__title {
   justify-self: start;
+  margin-inline-start: var(--header-title-margin-inline-start);
 }
 
 .header__description {
@@ -427,6 +429,13 @@
 
 /* BEGIN: Стили для tablet устройств (от 768px до 1023px) */
 @media (width >= 768px) {
+  /* BEGIN: Стили шапки сайта (header) */
+  .header__title {
+    justify-self: start;
+    margin-inline-start: var(--header-title-margin-inline-start);
+  }
+  /* END: Стили шапки сайта (header) */
+
   /* BEGIN: Стили секции (section) */
   .section__inner {
     grid-template-columns: 1fr 2fr;
@@ -435,8 +444,8 @@
 
   /* BEGIN: Стили секции снижения концентрации (concentration-decrease) */
   .concentration-decrease__content {
-    grid-row: 2;
     grid-column: 1 / -1;
+    grid-row: 2;
   }
   /* END: Стили секции снижения концентрации (concentration-decrease) */
 
@@ -477,6 +486,16 @@
 
 /* BEGIN: Стили для desktop устройств (от 1024px) */
 @media (width >= 1024px) {
+  /* BEGIN: Стили навигации сайта по смене темы (header__theme-menu) */
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+  /* END: Стили навигации сайта по смене темы (header__theme-menu) */
+
   /* BEGIN: Стили секции снижения концентрации (concentration-decrease) */
   .concentration-decrease__content {
     grid-template-columns: repeat(3, 1fr);

@@ -27,6 +27,10 @@
   --h2-color: var(--color-primary);
   /* END: Переменные h2 (xl) */
 
+  /* BEGIN: Переменные шапки сайта (header) */
+  --header-decor-display: flex;
+  /* END: Переменные шапки сайта (header) */
+
   /* BEGIN: Переменные кнопки смены темы (header__theme-menu-button) */
   --theme-button-color: var(--color-accent);
   /* END: Переменные кнопки смены темы (header__theme-menu-button) */

@@ -95,6 +95,7 @@
     calc(0.9rem + 14.453vw),
     var(--h1-font-size-lg)
   );
+  --h1-font-size: var(--h1-font-size-mobile);
   --h1-line-height: var(--line-height-xs);
   --h1-text-shadow: 4px 4px 0 var(--color-accent);
   --h1-color: var(--color-pink-light);
@@ -115,6 +116,7 @@
 
   /* BEGIN: Переменные шапки сайта (header) */
   --header-min-block-size: 668px;
+  --header-title-margin-inline-start: 0;
   --header-description-inline-size: max(
     50%,
     calc(var(--breakpoint-base) - 2 * var(--container-padding))
@@ -126,7 +128,7 @@
   /* END: Переменные шапки сайта (header) */
 
   /* BEGIN: Переменные кнопки смены темы (header__theme-menu-button) */
-  --theme-button-padding: 0.3rem 1.25rem;
+  --theme-button-padding: 0.4rem 1.35rem;
   --theme-button-font-family: var(--font-family-base);
   --theme-button-font-size: var(--font-size-base);
   --theme-button-font-weight: var(--font-weight-base);
@@ -177,3 +179,17 @@
   --decorated-decor-element-size: 2.5rem;
   /* END: Переменные декорированной зоны (decorated-zone) */
 }
+
+/* BEGIN: Стили для tablet устройств (от 768px до 1023px) */
+@media (width >= 768px) {
+  :root {
+    /* BEGIN: Переменные h1 (xxl) */
+    --h1-font-size: var(--h1-font-size-tablet);
+    /* END: Переменные h1 (xxl) */
+
+    /* BEGIN: Переменные шапки сайта (header) */
+    --header-title-margin-inline-start: -20px;
+    /* END: Переменные шапки сайта (header) */
+  }
+}
+/* END: Стили для tablet устройств (от 768px до 1023px) */
