@@ -248,18 +248,6 @@
 }
 /* END: Стили общей секции (section) */
 
-/* BEGIN: Стили секции снижения концентрации (concentration-decrease) */
-.concentration-decrease {
-  margin: 0;
-  padding: 0;
-}
-
-.concentration-decrease__content {
-  margin: 0 auto;
-  padding: 0;
-}
-/* END: Стили секции снижения концентрации (concentration-decrease) */
-
 /* BEGIN: Стили текстовой карточки (text-card) */
 .text-card {
   display: block;
@@ -269,12 +257,10 @@
 }
 
 .text-card__inner {
+  display: grid;
+  gap: var(--text-card-gap);
   margin: 0 auto;
   padding: 0;
-}
-
-.text-card__title {
-  margin-block-end: 1rem;
 }
 
 .text-card__content {
@@ -311,19 +297,12 @@
 /* END: Стили ссылки (link) */
 
 /* BEGIN: Стили секции галереи (gallery-section) */
-.gallery-section {
-  margin: 0;
-  padding: 0;
+.gallery-section__inner {
+  gap: var(--gallery-gap);
 }
 
 .gallery-section__content {
-  margin: 0 auto;
-  padding: 0;
-}
-
-.gallery-section__title {
-  margin: 0;
-  padding: 0;
+  gap: var(--gallery-gap);
 }
 /* END: Стили секции галереи (gallery-section) */
 
@@ -337,7 +316,7 @@
 
 .gallery__list {
   display: grid;
-  gap: var(--section-gap);
+  gap: var(--gallery-gap);
   margin: 0 auto;
   padding: 0;
   inline-size: 100%;

@@ -158,6 +158,10 @@
   --section-gap: 2rem;
   /* END: Переменные общей секции (section) */
 
+  /* BEGIN: Переменные текстовой карточки (text-card) */
+  --text-card-gap: 1rem;
+  /* END: Переменные текстовой карточки (text-card) */
+
   /* BEGIN: Переменные ссылки (link) */
   --link-font-size: inherit;
   --link-line-height: inherit;
@@ -167,6 +171,12 @@
   --link-color: currentColor;
   --link-border-block-end: none;
   /* END: Переменные ссылки (link) */
+
+  /* BEGIN: Переменные секции галереи (gallery-section) */
+  --gallery-gap-min: 1rem;
+  --gallery-gap-max: 2rem;
+  --gallery-gap: clamp(var(--gallery-gap-min), calc(0.041rem + 2.551vw), var(--gallery-gap-max));
+  /* END: Переменные секции галереи (gallery-section) */
 
   /* BEGIN: Переменные подвала сайта (footer) */
   --footer-min-block-size: var(--header-min-block-size);
